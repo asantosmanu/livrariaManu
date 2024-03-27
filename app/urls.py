@@ -15,6 +15,7 @@ router = DefaultRouter()
 
 router.register(r"users", UserViewSet, basename="users")
 router.register(r"categorias", CategoriaViewSet, basename="categorias")
+router.register(r"editora", EditoraViewSet, basename="editoras")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
